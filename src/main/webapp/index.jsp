@@ -27,6 +27,7 @@
         <table class="table table-striped table-sm">
             <thead>
             <tr>
+                <th scope="col">Detail</th>
                 <th scope="col" class="col-id">Name</th>
                 <th scope="col">Local Planet</th>
                 <th scope="col">Species</th>
@@ -35,7 +36,10 @@
             </thead>
             <tbody>
             <% for(MemberVO vo : memberList) { %>
-            <tr onclick="goToView(<%=vo.getId()%>)">
+            <tr>
+                <td><a onclick="goToView(<%=vo.getId()%>)"><button class="btn btn-primary btn-lg" type="button">
+                    <i class="fas fa-search"></i>
+                </button></a></td>
                 <td><%=vo.getName() %></td>
                 <td><%=vo.getLocal_planet() %></td>
                 <td><%=vo.getSpecies() %></td>

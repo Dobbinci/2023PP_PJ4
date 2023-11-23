@@ -15,7 +15,7 @@
 %>
 <div class="container">
     <div class="py-5 text-center">
-        <h2>Register</h2>
+        <h2>Edit profile</h2>
         <p class="lead">Please write in your information below</p>
     </div>
 
